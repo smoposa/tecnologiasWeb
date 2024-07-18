@@ -3,120 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impacto de las Tecnologias Web</title>  
+    <title>Impacto de las Tecnologías Web</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Menú -->
-    <header>
-        <a href="index.html"><img src="img/logo.png" alt="Logo" style="width: 20%;"></a>
-        <div id="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html" style="font-weight: bold; color: rgb(2, 80, 44);">Inicio</a></li>
-                    <li>La Web en
+    <div class="inicio-container">
+        <header class="inicio-header">
+            <div class="inicio-header-container">
+                <div class="inicio-logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Logo de la empresa" class="logo-img"></a>
+                </div>
+                <div class="inicio-menu">
+                    <nav class="inicio-nav">
                         <ul>
-                            <li><a href="la-web-en-la-familia.html">La Familia</a></li>
-                            <li><a href="la-web-en-la-sociedad.html">La Sociedad</a></li>
-                            <li><a href="la-web-en-los-negocios.html">Los Negocios</a></li>
+                            <li><a href="index.html" class="menu-link active">Inicio</a></li>
+                            <li><a href="#" class="menu-link">La Web en</a>
+                                <ul>
+                                    <li><a href="la-web-en-la-familia.html" class="menu-link">La Familia</a></li>
+                                    <li><a href="la-web-en-la-sociedad.html" class="menu-link">La Sociedad</a></li>
+                                    <li><a href="la-web-en-los-negocios.html" class="menu-link">Los Negocios</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contacto.html" class="menu-link">Contacto</a></li>
                         </ul>
-                    </li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <img src="img/Banner.jpg" alt="Banner de la página" class="banner-img">
+
+        <div class="inicio-contenido">
+            <h1 class="center-text">Impacto de las Tecnologías Web en la Sociedad y los Negocios</h1>
+            <div id="articulos-2" class="inicio-articulos-2">
+                <div class="main-content">
+                    <p>La tecnología avanza a pasos agigantados, tanto que no se puede predecir que saldrá el día de mañana, la tecnología y su integración en la sociedad, negocios, gobierno e individuos, permite que el trabajo y las actividades sean más sencillas y fáciles de realizar, muchas de las cosas que hacemos hoy en día pasan por el uso de un ordenador o aún más, de un dispositivo móvil que va con nosotros a todas partes.</p>
+                </div>
+                <div class="side-content">
+                    <div id="video2" class="video-container">
+                        <iframe src="https://www.youtube.com/embed/rAKX10OnXbU?si=koyYWbl7FLQZSDw4" class="video-iframe" title="Video YouTube 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+            </div>   
+            <p><strong>La psicología</strong> busca explicar cómo las personas pueden convertirse en dependientes de las relaciones creadas gracias a la tecnología y descuidar lo que auténticamente sucede a su alrededor. <strong>La sociología</strong> investiga cómo esta nueva forma de aproximarnos a la realidad social puede modificar el tejido de la comunidad. Y <strong>la ética y la filosofía</strong> intentan responder, entre otras muchas, a la cuestión de si estas nuevas maneras de relacionarnos y entender al mundo han afectado la construcción de motivaciones y valores que nos mueven como seres humanos.</p>
+            <p>A continuación, te invitamos a leer los siguientes artículos sobre el impacto de <i><strong>"las Tecnologías Web en la Sociedad y los Negocios."</strong></i></p>
+            <p>El mundo está lleno de cosas que van a desaparecer por la constante mutación de los tiempos en los que vivimos. ¿Estamos ante el final de los trabajos? ¿Los robots coparán el mercado laboral? La mirada tiene que ser otra. Surgirán empleos nuevos, profesiones que todavía carecen de un nombre propio. La sociedad reorganizará su propio sistema social y las instituciones. El mundo digital del siglo XXI exige una reorganización del mundo totalmente diferente a los patrones ya conocidos y explotados. Y ahí la tecnología se torna fundamental, aunque con equipos transversales, con ingenieros y humanistas, que la pongan al servicio de la ciudadanía y de las organizaciones.</p>
+            
+            <h2 class="center-text">Artículos Relacionados</h2>
+            <div id="articulos" class="inicio-articulos">
+                <article>
+                    <h3 class="center-text">La web en la Familia</h3>
+                    <img src="img/webfamilia.webp" alt="La web en la familia" class="inicio-img"><br>
+                    <a href="la-web-en-la-familia.html" class="leer-mas"><p>La familia</p></a>
+                </article>
+                <article>
+                    <h3 class="center-text">La web en la Sociedad</h3>
+                    <img src="img/websociedad.webp" alt="La web en la sociedad" class="inicio-img"><br>
+                    <a href="la-web-en-la-sociedad.html" class="leer-mas"><p>La sociedad</p></a>
+                </article>
+                <article>
+                    <h3 class="center-text">La web en los Negocios</h3>
+                    <img src="img/webempresa.webp" alt="La web en los negocios" class="inicio-img"><br>
+                    <a href="la-web-en-los-negocios.html" class="leer-mas"><p>Los negocios</p></a>
+                </article>    
+            </div>
+            <section id="news">
+                <div class="noticias-cuadro">
+                    <div class="noticias-contenedor">
+                        <article>
+                            <h2 class="highlight-text">También te puede interesar</h2>
+                        </article>
+                        <article>
+                            <h5 class="highlight-text">Microsoft presenta Copilot+. 
+                                <span class="block-text">La IA que llega a Windows</span>
+                            </h5>
+                            <a href="https://www.xataka.com/ordenadores/microsoft-presenta-copilot-ia-que-llega-a-windows-tendra-ordenadores-su-propia-denominacion" target="_blank">
+                            <img src="img/copilot.webp" alt="Imagen de Copilot" class="noticia-img"></a>
+                        </article>
+                        <article>
+                            <h5 class="highlight-text">La NASA 
+                                <span class="block-text">completa un rescate histórico</span>
+                            </h5>
+                            <a href="https://www.xataka.com/espacio/seis-meses-despues-sonda-voyager-1-vuelve-a-mandar-datos-cientificos-nasa-completa-rescate-historico" target="_blank">
+                            <img src="img/nasa.webp" alt="Imagen de la NASA" class="noticia-img"></a>
+                        </article>
+                        <article>
+                            <h5 class="highlight-text">La guerra Mac vs PC 
+                                <span class="block-text">parecía cosa del pasado.</span>
+                            </h5>
+                            <a href="https://www.xataka.com/ordenadores/guerra-mac-vs-pc-parecia-cosa-pasado-esta-a-punto-volver" target="_blank">
+                            <img src="img/macvspc.webp" alt="Imagen de la guerra Mac vs PC" class="noticia-img"></a>
+                        </article>
+                    </div>
+                </div>
+            </section>
         </div>
-    </header>
-    <!-- Fin Menú --> 
 
-    <!-- Inicio de Contenio --> 
-    <div id="Contenido">
-        <img src="img/banner.webp" alt="Slider1" style="width: 100%;">
-        <h1>Impacto de las Tecnologías Web en la Sociedad y los Negocios</h1>
-        <p>La tecnología avanza a pasos agigantados, tanto que no se puede predecir que saldrá el día de mañana, la tecnología y su integración en la sociedad, negocios, gobierno e individuos, permite que el trabajo y las actividades sean más sencillas y faciles de realizar, muchas de las cosas que hacemos hoy en día pasan por el uso de un ordenador o aún más, de un dispositivo movil que va con nosotros a todas partes.</p>
-        <p>Actividades como: ver el pronóstico del clima, organizar nuestra agenda personal, tener un directorio, interactuar con amigos y familiares, hacer una compra o elegir el proveedor de un servicio determinado, en fin, son solo algunos de los ejemplos de lo que podemos hacer utilizando un pequeño dispositivo portable con conexión a Internet. Mucho se ha abordado el cómo esta presencia invasiva de la tecnología puede incidir en gran medida en la forma en que nos relacionamos unos con otros y sobre los efectos sociales de la tecnología.</p>
-        <img src="img/tecnologia-web-en-la-sociedad.webp" alt="tecnologia-web-en-la-sociedad" style="width: 50%;">
-        <p><strong>La psicología</strong> busca explicar cómo las personas pueden convertirse en dependientes de las relaciones creadas gracias a la tecnología y descuidar lo que auténticamente sucede a su alrededor. <strong>La sociología</strong> investiga cómo esta nueva forma de aproximarnos a la realidad social puede modificar el tejido de la comunidad. Y <strong>la ética y la filosofía</strong> intentan responder, entre otras muchas, a la cuestión de si estas nuevas maneras de relacionarnos y entender al mundo han afectado la construcción de motivaciones y valores que nos mueven como seres humanos.</p>
-        <p>A continuación, te invitamos a leer los siguientes artículos sobre el impacto de <i><strong>"las Tecnologías Web en la Sociedad y los Negocios."</strong></i></p>
-        <p>El mundo está lleno de cosas que van a desaparecer por la constante mutación de los tiempos en los que vivimos. ¿Estamos ante el final de los trabajos? ¿Los robots coparán el mercado laboral? La mirada tiene que ser otra. Surgirán empleos nuevos, profesiones que todavía carecen de un nombre propio. La sociedad reorganizará su propio sistema social y las instituciones. El mundo digital del siglo XXI exige una reorganización del mundo totalmente diferente a los patrones ya conocidos y explotados. Y ahí la tecnología se torna fundamental, aunque con equipos transversales, con ingenieros y humanistas, que la pongan al servicio de la ciudadanía y de las organizaciones.</p>
-
-        <br>
-        <div id="articulos">
-
-            <article>
-                <h3>La web en la Familia</h3>
-                <img src="img/webfamilia.webp" alt="familia"  style="width: 30%;"><br>
-                <a href="la-web-en-la-familia.html"><p>Leer más </p></a>
-            </article>
-            <article>
-                <h3>La web en la Sociedad</h3>
-                <img src="img/websociedad.webp" alt="sociedad" style="width: 30%;"><br>
-                <a href="la-web-en-la-sociedad.html"><p>Leer más </p></a>
-            </article>
-            <article>
-                <h3>La web en los Negocios</h3>
-                <img src="img/webempresa.webp" alt="negocios" style="width: 30%;"><br>
-                <a href="la-web-en-los-negocios.html"><p>Leer más </p></a>
-            </article>    
-
-        </div>
-        
-        <!-- Inicio Noticias --> 
-        <section id="news">
-            <h3>También te puede interesar</h3>
-            <article>
-                <h4 style="color:#021a44d8">Microsoft presenta Copilot+. La IA que llega a Windows</h4>
-                <a href="https://www.xataka.com/ordenadores/microsoft-presenta-copilot-ia-que-llega-a-windows-tendra-ordenadores-su-propia-denominacion" target="_blank">
-                
-                <img src="img/copilot.webp" alt="copilot" style="width: 25%;"></a>
-            </article>
-            <article>
-                <h4 style="color:#021a44d8">La NASA completa un rescate histórico</h4>
-                <a href="https://www.xataka.com/espacio/seis-meses-despues-sonda-voyager-1-vuelve-a-mandar-datos-cientificos-nasa-completa-rescate-historico" target="_blank">
-                
-                <img src="img/nasa.webp" alt="nasa" style="width: 25%;"></a>
-            </article>
-            <article>
-                <h4 style="color:#021a44d8">La guerra Mac vs. PC parecía cosa del pasado.</h4>
-                <a href="https://www.xataka.com/ordenadores/guerra-mac-vs-pc-parecia-cosa-pasado-esta-a-punto-volver" target="_blank">
-                
-                <img src="img/macvspc.webp" alt="macvswin" style="width: 25%;"></a>
-            </article>
-        </section>
-        <!-- Fin Noticias --> 
-        
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>TECNOLOGÍAS WEB</h4>
+                    <img src="img/logo.png" alt="Logo de la empresa" class="logo-img"> 
+                </div>
+                <div class="footer-column">
+                    <h4>MENÚ</h4>
+                    <ul>
+                        <li><a href="la-web-en-la-familia.html" class="footer-link">La Web en la Familia</a></li>
+                        <li><a href="la-web-en-la-sociedad.html" class="footer-link">La Web en la Sociedad</a></li>
+                        <li><a href="la-web-en-los-negocios.html" class="footer-link">Los Negocios</a></li>
+                        <li><a href="contacto.html" class="footer-link">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>ÁREAS FORMATIVAS</h4>
+                    <ul>
+                        <li><a href="#" class="footer-link">Cursos de Diseño Web</a></li>
+                        <li><a href="#" class="footer-link">Cursos de Marketing</a></li>
+                        <li><a href="#" class="footer-link">Cursos de Seguridad Privada</a></li>
+                        <li><a href="#" class="footer-link">Cursos en Desarrollo de Apps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>POLÍTICAS</h4>
+                    <ul>
+                        <li><a href="#" class="footer-link">Políticas de Privacidad</a></li>
+                        <li><a href="#" class="footer-link">Políticas de cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyrights">
+                <hr class="footer-hr">
+                <p>© Copyright Sepcomtic. Todos los derechos reservados.</p>
+            </div>
+        </footer>
     </div>
-    <!-- Fin de Contenio --> 
-
-    <!-- Inicio Footer -->
-    <footer>
-
-        <h4 class="footer-widget-title">Tecnologias Web</h4>
-        <img src="img/logo.png" alt="Logo" style="width: 20%;">
-            <h4>Menú</h4>
-            <ul>
-                <li><a href="la-web-en-la-familia.html">La Web en la Familia</a></li>
-                <li><a href="la-web-en-la-sociedad.html">La Web en la Sociedad</a></li>
-                <li><a href="la-web-en-los-negocios.html">La Web en los Negocios</a></li>
-                <li><a href="contacto.html">Contáctanos</a></li>
-            </ul>
-
-            <h4>Áreas Formativas</h4>
-            <ul>
-                <li><a href="#">Cursos de Diseño Web</a></li>
-                <li><a href="#">Cursos de Marketing</a></li>
-                <li><a href="#">Cursos de Seguridad Privada</a></li>
-                <li><a href="#">Cursos en Desarrollo de Apps</a></li>
-                </ul>
-            <h4>Políticas</h4>
-            <ul>
-            <li><a href="#">Políticas de Privacidad</a></li>
-            <li><a href="#">Políticas de cookies</a></li>
-            </ul>
-    </footer>
-    <footer>
-        <div class="copyrights">
-            <p>Todos los derechos reservados. </p>
-        </div>
-    </footer>
-    <!-- Fin Footer -->
-    </body>
+</body>
+</html>

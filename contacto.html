@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>  
+    <title>Contacto - Tecnologías Web</title> 
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
 </head>
-
 <body>
     <!-- Menú -->
     <header>
-        <a href="index.html"><img src="img/logo.png" alt="Logo" style="width: 20%;"></a>
-        <div id="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li>La Web en
-                        <ul>
-                            <li><a href="la-web-en-la-familia.html">La Familia</a></li>
-                            <li><a href="la-web-en-la-sociedad.html">La Sociedad</a></li>
-                            <li><a href="la-web-en-los-negocios.html">Los Negocios</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contacto.html" style="font-weight: bold; color: rgb(2, 80, 44);">Contacto</a></li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="Logo de la empresa" class="logo-img"></a>
+            </div>
+            <div class="menu">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html" class="menu-link">Inicio</a></li>
+                        <li><a href="#" class="menu-link">La Web en</a>
+                            <ul>
+                                <li><a href="la-web-en-la-familia.html" class="menu-link">La Familia</a></li>
+                                <li><a href="la-web-en-la-sociedad.html" class="menu-link">La Sociedad</a></li>
+                                <li><a href="la-web-en-los-negocios.html" class="menu-link">Los Negocios</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacto.html" class="menu-link active">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <!-- Fin Menú --> 
+    <!-- Fin Menú -->
 
-    <!-- Inicio de Contenio --> 
-    <div class="Contenido">
-        <div class="bannercont">
-            <img src="img/bannercontact.jpg" alt="contacto" style="width: 100%;">
-        </div>
-        <div class="titulo-principal">
-            <h1>Contacto</h1>
-        </div>
-        
-        <!-- Contacto --> 
-        <div id="Columna-contacto-6">
+    <!-- Barra de separación -->
+    <div class="separador-rojo"></div>
+    
+    <!-- Inicio de Contenido --> 
+    <div class="separador"></div>
+    <h1 class="titulo-contacto">Contáctanos</h1>
+    <div class="contenido-contacto">
+        <div class="columna">
+            <!-- Contacto --> 
             <h2>Déjanos tu mensaje</h2>
             <form action="#">
                 <div>
@@ -66,61 +69,106 @@
                 </div>
                 <br>
                 <div>
-                    <button type="submit">Enviar</button>
+                <button type="submit">Enviar</button>
                 </div>
             </form>
         </div>
         <!-- Fin Contacto --> 
-
+    
         <!-- Mapa --> 
-        <div id="Columna-ubicanos-6">
+        <div class="columna">
             <h2>Ubícanos</h2>
             <div class="mapa">
-                <iframe></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6710.015223203441!2d-78.47862111256593!3d-0.1786638925617394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sec!4v1721114192402!5m2!1sen!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación en Google Maps"></iframe>
             </div>
         </div>
-        <!-- Mapa --> 
-
-        <!-- Redes --> 
-        <div id="Columna-12">
-            <ul class="social-media">
-                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-            </ul>
-        </div>
+        <!-- Fin Mapa --> 
     </div>
-    <!-- Fin Contenido Principal --> 
+    
+    
+    <!-- Redes --> 
+    <h3 class="titulo-contacto">Síguenos en:</h3>
+    <div class="redes">
+        <ul class="social-media">
+            <li><a href="https://facebook.com" target="_blank"><img src="img/face.png" alt="Facebook"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img src="img/twi.png" alt="Twitter"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img src="img/inst.png" alt="Instagram"></a></li>
+            <li><a href="https://linkedin.com" target="_blank"><img src="img/in.png" alt="LinkedIn"></a></li>
+        </ul>
+    </div><br>
+    
+    <!-- Inicio Noticias --> 
+    <section id="news">
+        <div class="noticias-cuadro">
+            <div class="noticias-contenedor">
+                <article>
+                    <h2 class="highlight-text">También 
+                        <span class="block-text">te puede interesar</span>
+                    </h2>
+                </article>
+                <article>
+                    <h5 class="highlight-text">Microsoft presenta Copilot+. 
+                        <span class="block-text">La IA que llega a Windows</span>
+                    </h5>
+                    <a href="https://www.xataka.com/ordenadores/microsoft-presenta-copilot-ia-que-llega-a-windows-tendra-ordenadores-su-propia-denominacion" target="_blank">
+                    <img src="img/copilot.webp" alt="Imagen de Copilot" class="noticia-img"></a>
+                </article>
+                <article>
+                    <h5 class="highlight-text">La NASA 
+                        <span class="block-text">completa un rescate histórico</span>
+                    </h5>
+                    <a href="https://www.xataka.com/espacio/seis-meses-despues-sonda-voyager-1-vuelve-a-mandar-datos-cientificos-nasa-completa-rescate-historico" target="_blank">
+                    <img src="img/nasa.webp" alt="Imagen de la NASA" class="noticia-img"></a>
+                </article>
+                <article>
+                    <h5 class="highlight-text">La guerra Mac vs PC 
+                        <span class="block-text">parecía cosa del pasado.</span>
+                    </h5>
+                    <a href="https://www.xataka.com/ordenadores/guerra-mac-vs-pc-parecia-cosa-pasado-esta-a-punto-volver" target="_blank">
+                    <img src="img/macvspc.webp" alt="Imagen de la guerra Mac vs PC" class="noticia-img"></a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Noticias --> 
 
     <!-- Inicio Footer -->
     <footer>
-
-        <h4 class="footer-widget-title">Tecnologias Web</h4>
-        <img src="img/logo.png" alt="Logo" style="width: 10%;">
-            <h4>Menú</h4>
-            <ul>
-                <li><a href="la-web-en-la-familia.html">La Web en la Familia</a></li>
-                <li><a href="la-web-en-la-sociedad.html">La Web en la Sociedad</a></li>
-                <li><a href="la-web-en-los-negocios.html">La Web en los Negocios</a></li>
-                <li><a href="contacto.html">Contáctanos</a></li>
-            </ul>
-
-            <h4>Áreas Formativas</h4>
-            <ul>
-                <li><a href="#">Cursos de Diseño Web</a></li>
-                <li><a href="#">Cursos de Marketing</a></li>
-                <li><a href="#">Cursos de Seguridad Privada</a></li>
-                <li><a href="#">Cursos en Desarrollo de Apps</a></li>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>TECNOLOGÍAS WEB</h4>
+                <img src="img/logo.png" alt="Logo de la empresa" class="logo-img"> 
+            </div>
+            <div class="footer-column">
+                <h4>MENÚ</h4>
+                <ul>
+                    <li><a href="la-web-en-la-familia.html" class="footer-link">La Web en la Familia</a></li>
+                    <li><a href="la-web-en-la-sociedad.html" class="footer-link">La Web en la Sociedad</a></li>
+                    <li><a href="la-web-en-los-negocios.html" class="footer-link">Los Negocios</a></li>
+                    <li><a href="contacto.html" class="footer-link">Contáctanos</a></li>
                 </ul>
-            <h4>Políticas</h4>
-            <ul>
-            <li><a href="#">Políticas de Privacidad</a></li>
-            <li><a href="#">Políticas de cookies</a></li>
-            </ul>
-    </footer>
-        <div class="copyrights">
-            <p>Todos los derechos reservados. </p>
+            </div>
+            <div class="footer-column">
+                <h4>ÁREAS FORMATIVAS</h4>
+                <ul>
+                    <li><a href="#" class="footer-link">Cursos de Diseño Web</a></li>
+                    <li><a href="#" class="footer-link">Cursos de Marketing</a></li>
+                    <li><a href="#" class="footer-link">Cursos de Seguridad Privada</a></li>
+                    <li><a href="#" class="footer-link">Cursos en Desarrollo de Apps</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>POLÍTICAS</h4>
+                <ul>
+                    <li><a href="#" class="footer-link">Políticas de Privacidad</a></li>
+                    <li><a href="#" class="footer-link">Políticas de cookies</a></li>
+                </ul>
+            </div>
         </div>
+        <div class="copyrights">
+            <hr class="footer-hr">
+            <p>© Copyright Sepcomtic. Todos los derechos reservados.</p>
+        </div>
+    </footer>
     <!-- Fin Footer -->
-    </body>
+</body>
